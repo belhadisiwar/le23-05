@@ -1,0 +1,82 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
+<img [src]="a">
+<table>
+  <table>
+    <tr>
+      <td>month</td>
+      <td>savings</td>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>
+        $100
+      </td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>
+        $80
+      </td>
+    </tr>
+    <!-- <tr>
+        <td [attr.colspan]="col">somm : $180</td>
+      </tr> -->
+  </table>
+</table>
+<h1 [class.green]="isactive">hello</h1>
+<h1 [style.color]="isactive?'green':'red'">hiiiiii</h1>
+<h1 (click)="login()">login</h1>
+
+
+
+<input type="number" [(ngModel)]="num1">
+<input type="number" [(ngModel)]="num2">
+<input type="button" (click)="add()" value="somme">
+<input type="button" (click)="div()" value="sur">
+<input type="button" (click)="mult()" value="fois">
+<input type="button" (click)="mois()" value="sous">
+<b>{{result}}</b><br>
+
+
+name: <input type="text" [(ngModel)]="name" name="name">
+lastname:<input type="text" [(ngModel)]="lastname" name="lastname">
+email:<input type="email" [(ngModel)]="email" name="email">
+password:<input type="text" [(ngModel)]="password" name="password">
+<input type="button" (click)=(fun($event)) value="ok">
+
+
+
+
+<div *ngFor="let i of colors; index as i">
+  <h2> {{i}} </h2>
+</div>
+
+
+<div [ngSwitch] ="num">
+  <div *ngSwitchCase="1">1</div>
+  <div *ngSwitchCase="2">2</div>
+  <div *ngSwitchCase="3">3</div>
+  <div *ngSwitchCase="4">4</div>
+  <div *ngSwitchDefault>5</div>
+</div> 

@@ -1,0 +1,12 @@
+<p>
+  test works!
+</p>
+
+<form [formGroup]="person" >
+nom:<input formControleName="nom" placeholder="saisir nom">
+age:<input formControleName="age" placeholder="saisir age">
+ville:<input formControleName="ville" placeholder="saisir ville">
+<!-- pays:<input formControleName="pays" placeholder="saisir pays"> -->
+<button type="submit" (click)="registrer()">ok</button>
+</form>
+
